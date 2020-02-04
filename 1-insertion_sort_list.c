@@ -31,7 +31,7 @@ if (node->next)
 node->next->prev = node;
 nodenext->next = node;
 node = node->prev;
- if (nodenext->prev)
+if (nodenext->prev)
 nodenext = nodenext->prev;
 print_list(*list);
 }
