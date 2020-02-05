@@ -12,3 +12,5 @@ This is a project on sorting algorithms
 # Contributors
 * Iheb Mejri
 * Yassin Bahri
+
+# Holberton School Project in C
