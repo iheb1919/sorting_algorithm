@@ -6,3 +6,4 @@ This is a project on sorting algorithms
 * Bubble Sort
 * Insertion Sort
 * Selection Sort
+* Quick Sort
