@@ -10,3 +10,4 @@ This is a project on sorting algorithms
 * Shell Sort
 
 # Contributors
+* Iheb Mejri
