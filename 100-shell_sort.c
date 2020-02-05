@@ -13,7 +13,7 @@ int p = 1, i, temp;
 
 for (p = (int)size/2; p > 0; p /= 2){
 for (i = p; i < (int)size; i += 1) {
-int temp = array[i];
+temp = array[i];
 int k;
 for (k = i; k >= p && array[k - p] > temp; k -= p){
 array[k] = array[k - p];
