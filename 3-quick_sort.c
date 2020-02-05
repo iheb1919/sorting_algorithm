@@ -2,9 +2,8 @@
 
 /**
  * swap - swap items
- * @a: qrrqy index 
+ * @a: qrrqy index
  * @b: qrrqy index
- *
  * Return: void
  */
 
@@ -24,6 +23,7 @@ aux = *a;
  * @array: pointer to array
  * @low: smallest index
  * @hight: righer index
+ * @size: array size
  * Return: pivot
  */
 
@@ -57,6 +57,7 @@ return (j);
  * @array: pointer to array
  * @low: smallest index
  * @hight: righer index
+ * @size: array size
  */
 
 
@@ -66,7 +67,7 @@ int pivot;
 if (low < hight)
 {
 pivot = partition(array, low, hight, size);
-quicksort(array, low, pivot - 1 , size);
+quicksort(array, low, pivot - 1, size);
 quicksort(array, pivot + 1, hight, size);
 }
 }
