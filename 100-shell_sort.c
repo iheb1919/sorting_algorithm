@@ -19,7 +19,7 @@ for (i = gap; i < (int)size; i += 1)
 {
 temp = array[i];
 int k;
-for (k = i; k >= gap && array[k - p] > temp; k -= gap){
+for (k = i; k >= gap && array[k - gap] > temp; k -= gap){
 array[k] = array[k - gap];
 }
 array[k] = temp;
