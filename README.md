@@ -5,3 +5,4 @@ This is a project on sorting algorithms
 ## Using different sorting methods including:
 * Bubble Sort
 * Insertion Sort
+* Selection Sort
