@@ -9,14 +9,17 @@
 
 void shell_sort(int *array, size_t size)
 {
-for (int p = size/2; p > 0; p /= 2){
-for (int i = p; i < size; i += 1) {
+int p = 1, i, temp;
+
+for (p = size/2; p > 0; p /= 2){
+for (i = p; i < size; i += 1) {
 int temp = array[i];
-int j;
-for (j = i; j >= p && array[j - p] > temp; j -= p){
-array[j] = array[j - p];
+int k;
+for (k = i; k >= p && array[k - p] > temp; k -= p){
+array[k] = array[k - p];
 }
-array[j] = temp;
+array[k] = temp;
 }
+print_array(array, size);
 }
 }
