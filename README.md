@@ -8,3 +8,5 @@ This is a project on sorting algorithms
 * Selection Sort
 * Quick Sort
 * Shell Sort
+
+# Contributors
