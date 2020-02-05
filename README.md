@@ -7,3 +7,4 @@ This is a project on sorting algorithms
 * Insertion Sort
 * Selection Sort
 * Quick Sort
+* Shell Sort
