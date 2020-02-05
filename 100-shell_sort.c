@@ -9,18 +9,18 @@
 
 void shell_sort(int *array, size_t size)
 {
-int p = 1, i, temp;
+int gap = 1, i, temp;
 
-while (p < (int)(size))
-p = (3 * p) + 1;
-for (p = (p - 1) / 3; p > 0; p = (p - 1) / 3)
+while (gap < (int)(size))
+gap = (3 * gap) + 1;
+for (gap = (gap - 1) / 3; gap > 0; gap = (gap - 1) / 3)
 {
-for (i = p; i < (int)size; i += 1)
+for (i = gap; i < (int)size; i += 1)
 {
 temp = array[i];
 int k;
-for (k = i; k >= p && array[k - p] > temp; k -= p){
-array[k] = array[k - p];
+for (k = i; k >= gap && array[k - p] > temp; k -= gap){
+array[k] = array[k - gap];
 }
 array[k] = temp;
 }
