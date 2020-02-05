@@ -11,8 +11,12 @@ void shell_sort(int *array, size_t size)
 {
 int p = 1, i, temp;
 
-for (p = (int)size/2; p > 0; p /= 2){
-for (i = p; i < (int)size; i += 1) {
+while (p < (int)(size))
+p = (3 * p) + 1;
+for (p = (int)size/2; p > 0; p /= 2)
+{
+for (i = p; i < (int)size; i += 1)
+{
 temp = array[i];
 int k;
 for (k = i; k >= p && array[k - p] > temp; k -= p){
