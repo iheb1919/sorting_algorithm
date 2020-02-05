@@ -12,14 +12,15 @@ void shell_sort(int *array, size_t size)
 int gap = 1, i, temp;
 
 while (gap < (int)(size))
-gap = (3 * gap) + 1;
+gap = (3 * gap) +1;
 for (gap = (gap - 1) / 3; gap > 0; gap = (gap - 1) / 3)
 {
 for (i = gap; i < (int)size; i += 1)
 {
 temp = array[i];
 int k;
-for (k = i; k >= gap && array[k - gap] > temp; k -= gap){
+for (k = i; k >= gap && array[k - gap] > temp; k -= gap)
+{
 array[k] = array[k - gap];
 }
 array[k] = temp;
