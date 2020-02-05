@@ -40,4 +40,6 @@ if (nodenext)
 nodenext = nodenext->next;
 }
 }
+else
+return;
 }
