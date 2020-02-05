@@ -12,7 +12,7 @@ void shell_sort(int *array, size_t size)
 int p = 1, i, temp;
 
 for (p = (int)size/2; p > 0; p /= 2){
-for (i = p; i < size; i += 1) {
+for (i = p; i < (int)size; i += 1) {
 int temp = array[i];
 int k;
 for (k = i; k >= p && array[k - p] > temp; k -= p){
